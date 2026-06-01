@@ -1,0 +1,23 @@
+{
+  "name": "nautica-contracts",
+  "version": "1.0.0",
+  "description": "Nautica smart contracts — NauticaNFT (ERC-721) + NauticaZKVerifier",
+  "scripts": {
+    "compile":    "hardhat compile",
+    "test":       "hardhat test",
+    "deploy:nft":      "hardhat run scripts/deploy-nft.ts --network mainnet",
+    "deploy:nft:sep":  "hardhat run scripts/deploy-nft.ts --network sepolia",
+    "deploy:zk":       "hardhat run scripts/deploy-zk.ts --network mainnet",
+    "deploy:zk:sep":   "hardhat run scripts/deploy-zk.ts --network sepolia",
+    "verify:nft":      "hardhat run scripts/verify-nft.ts --network mainnet",
+    "verify:zk":       "hardhat run scripts/verify-zk.ts --network mainnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "hardhat": "^2.22.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "dotenv": "^16.0.0"
+  }
+}
